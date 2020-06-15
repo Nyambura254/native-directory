@@ -10,7 +10,7 @@ Website: https://www.native.directory/
 
 - You made a repository on GitHub and you want the world to know it works with React Native.
 - You want to submit a pull request to improve Native Directory.
-- You want to report a bug or make a suggestion.
+- You want to report a bug or make a suggestion
 
 ## I don't like your website, can I hit an API instead and build my own better stuff?
 
@@ -19,7 +19,7 @@ Yeah of course:
 `https://native.directory?json=true`
 - Returns a list of all libraries in `JSON` format.
 
-`https://native.directory?json=true&search=webgl`
+`https://native.directory?json=true&search=webgl`.
 - Returns a list of all libraries in `JSON` format that have the keyword `webgl`.
 
 `https://native.directory?json=true&search=webgl&expo=true`
