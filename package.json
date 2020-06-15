@@ -1,0 +1,51 @@
+{
+  "name": "native-directory",
+  "version": "0.0.1",
+  "main": "index.js",
+  "scripts": {
+    "dev": "babel-node index.js --presets @babel/preset-env",
+    "build": "NODE_ENV=production next build",
+    "heroku-postbuild": "chmod -R +x node_modules/next/dist/bin/next-* && NODE_ENV=production next build",
+    "start": "NODE_ENV=production babel-node index.js --presets @babel/preset-env",
+    "create-data": "babel-node scripts/build-and-score-data.js --presets @babel/preset-env",
+    "script": "babel-node --presets @babel/preset-env",
+    "lint": "eslint .",
+    "test": "babel-node scripts/validate-libraries.js --presets @babel/preset-env",
+    "prettier": "eslint . --fix",
+    "precommit": "npm test"
+  },
+  "engines": {
+    "node": "10.7.0"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "compression": "^1.7.2",
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
+    "glamor": "^2.20.40",
+    "isomorphic-fetch": "^2.2.1",
+    "jsonfile": "^4.0.0",
+    "lodash": "^4.17.4",
+    "next": "7.0.2",
+    "next-routes": "^1.4.2",
+    "prop-types": "^15.6.2",
+    "react": "16.4.2",
+    "react-dom": "16.4.2",
+    "react-redux": "^5.0.7",
+    "redux": "^4.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "7.0.0",
+    "@babel/node": "7.0.0",
+    "@babel/preset-env": "7.0.0",
+    "cheerio": "^1.0.0-rc.2",
+    "eslint": "^4.9.0",
+    "eslint-config-prettier": "^2.6.0",
+    "eslint-plugin-babel": "^4.1.2",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-prettier": "^2.3.1",
+    "eslint-plugin-react": "^7.4.0",
+    "husky": "^0.14.3",
+    "prettier": "^1.10.2"
+  }
+}
