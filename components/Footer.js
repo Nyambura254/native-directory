@@ -4,6 +4,7 @@ import Link from '../components/Link';
 import { StyleSheet, css } from 'glamor/aphrodite';
 
 export default () => {
+  
   return (
     <footer className={css(styles.footer)}>
       <div className={css(styles.container)}>
